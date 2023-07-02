@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<div class="jumbotron country">
+<h1 class="display-4"><%= cityDisplay%></h1>
+<img src=<%= countryDisplay %> alt="">
+<p class="lead">Temperature is <%= temperature%> degrees <%= unitsDisplay %></p>
+<img src=<%= imgDisplay %> alt="">
+<p class="lead">Description: <%= descriptionWeather %></p>
+<hr class="my-4">
+<form action="/display" method="post"><button class="btn btn-primary btn-lg">RETURN HOME</button></form>
+</div>
+<%- include("partials/footer") -%>
